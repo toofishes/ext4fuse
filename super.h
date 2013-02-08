@@ -21,6 +21,10 @@
 uint32_t super_block_size(void);
 uint32_t super_inodes_per_group(void);
 uint32_t super_inode_size(void);
+uint32_t super_inodes_count(void);
+uint32_t super_free_inodes_count(void);
+uint32_t super_blocks_count(void);
+uint32_t super_free_blocks_count(void);
 int super_fill(void);
 
 /* struct ext4_group_desc */

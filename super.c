@@ -51,6 +51,26 @@ uint32_t super_inode_size(void)
     return super.s_inode_size;
 }
 
+uint32_t super_inodes_count(void)
+{
+    return super->s_inodes_count;
+}
+
+uint32_t super_free_inodes_count(void)
+{
+    return super->s_free_inodes_count;
+}
+
+uint32_t super_blocks_count(void)
+{
+    return super->s_blocks_count_lo;
+}
+
+uint32_t super_free_blocks_count(void)
+{
+    return super->s_free_blocks_count_lo;
+}
+
 
 int super_fill(void)
 {
